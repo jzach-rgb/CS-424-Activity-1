@@ -97,21 +97,52 @@ The goal is to identify which modifiers appear most often and compare their freq
 
 ### 2. How do modifier choices change depending on the time of day?
 
-**Action:** Compare and identify trends  
+**Action:** Compare trends  
 **Target:** Modifier frequency across different times of day
 
 The goal is to compare modifier choices across different time periods and identify whether certain modifiers become more or less common throughout the day. This abstraction focuses on how a categorical variable changes across time.
 
 ### 3. Are certain modifiers associated with higher sales prices?
 
-**Action:** Compare and identify relationships  
+**Action:** Compare relationships  
 **Target:** Sales values associated with different modifiers
 
-The goal is to compare sales values between different modifier groups and identify whether some modifiers are associated with higher sales. This turns the original question into a general task of examining the relationship between a categorical attribute and a quantitative attribute.
+The goal is to compare sales values between different modifier groups and identify whether some modifiers are associated with higher sales. So this makes the original question into a general task of examining the relationship between a categorical attribute and a quantitative attribute.
 
 ### 4. Which combinations of modifiers are most commonly ordered together?
 
 **Action:** Identify and compare  
 **Target:** Frequently occurring combinations of modifiers
 
-The goal is to identify which modifier combinations occur together most often and compare their frequencies. This abstraction focuses on finding patterns and relationships between categorical values.
+The goal is to see which modifier combinations happen together most frequently and compare their frequencies. This abstraction focuses on finding patterns and relationships between categorical values.
+
+## Task 5
+
+Sketch 1:
+
+This Bar plot is about the question of which drink modifiers are ordered most frequently. The x-axis represents the different modifiers and the y-axis represents the number of times each modifier appears in the dataset. The marks are bars, and the main visual channel is bar height. I made this design because it makes it easy to compare modifier frequencies and quickly identify the most popular options. One weakness is that it only shows overall popularity and does not show how modifier choices change over time or interact with other modifiers.
+
+Sketch 2:
+
+This Line Plot is about the question of how modifier choices change depending on the time of day. Time is represented along the x-axis and the number of times a modifier is ordered is represented on the y-axis. Each line represents a different modifier. The marks are points and lines, while position and line direction show changes in frequency over time. This design makes it easier to identify peaks and trends throughout the day. A weakness is that the visualization could become difficult to read if too many modifiers are displayed at once and it's harder to find specific times because of the scale of the x-axis.
+
+Sketch 3:
+
+This Scatter plot is about the question of whether certain modifiers are associated with higher sales prices. The x-axis contains the different modifier categories and the y-axis represents net sales. Each point represents an item sold with that modifier, and a horizontal line represents the average sales value for the modifier. The marks are points and lines, with vertical position representing sales price. This design allows me to see both the average price and the variation in prices for each modifier. One weakness is that many observations could overlap and make the visualization crowded.
+
+Refined Line Plot:
+
+This refined sketch addresses the question of how modifier choices change depending on the time of day. The x-axis represents time intervals throughout the day, while the y-axis represents the number of times each modifier appears. Each line represents a different modifier, and the legend helps distinguish between them. I refined this sketch by focusing on only a few major modifiers, adding a key, and making the time intervals clearer. These changes make the graph look cleaner and make trends in modifier usage easier to see.
+
+Refined Scatter Plot:
+
+This refined Scatter plot answers the question of whether certain modifiers are associated with higher sales prices. The x-axis represents modifier categories and the y-axis represents net sales. Each point represents one observation and the horizontal marks represent the average sales price for each modifier. I refined this sketch by getting rid of some of the  modifier categories, spacing the points more clearly, and adding an average marker for each group. These changes make it easier to compare both the distribution of sales prices and the typical price associated with each modifier.
+
+All the sketches are attached
+
+## Task 6
+
+
+## Task 7
+
+I worked on this assignment completely on my own. This made the project a little more difficult because I was responsible for every part of the process, but it also meant I did not have to coordinate collection methods or visualization decisions with other group members. After reading through the assignment, I collected the pilot data. The pilot helped me notice issues with how Square stores information, especially because multiple types of modifiers are stored together in the same field and some transactions contain multiple items. After reviewing the pilot, I collected the full dataset from Cor Coffee's Square POS system from September 8th to October 2nd. Since, the raw Square data contained sensitive customer information, I created a small Python script to remove identifying attributes before including the dataset in the project. After preparing the data, I made the sketches by myself, compared the different approaches, and made the final summary. Working alone made the assignment more time-consuming, but it also gave me full control over the collection process and made it easier to keep the project consistent all throughout.
